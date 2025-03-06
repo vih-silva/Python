@@ -18,7 +18,7 @@ while(not enforcou and not acertou):
 
     for letra in palavra_secreta:
         if (chute.upper() == letra.upper()):
-            print(f"Encontrei a letra {letra} na posição {index}")
+            letras_acertadas[index] = letra
         index = index + 1
-    print("jogando....")
+    print(letras_acertadas)
 print("Fim de jogo")
