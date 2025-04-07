@@ -21,15 +21,15 @@ class Conta:
 
     @property
     def saldo(self):
-        return self._saldo
+        return self.__saldo
     
     @property
     def titular(self):
-        return self._titular
+        return self.__titular
     
     @property
     def limite(self):
-        return self._limite
+        return self.__limite
     
     @limite.setter
     def limite(self, limite):
