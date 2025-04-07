@@ -10,13 +10,13 @@ class Conta:
         print(f"Saldo de ${self.saldo} do titular ${self.titular}")
 
     def deposita(self, valor):
-        self.saldo += valor
+        self.__saldo += valor
 
     def saque(self, valor):
-        self.saldo -= valor
+        self.__saldo -= valor
 
     def transfere(self, valor, destino):
-        self.saque(valor)
+        self.__saque(valor)
         destino.deposita(valor)
 
     @property
